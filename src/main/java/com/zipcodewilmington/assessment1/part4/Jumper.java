@@ -6,9 +6,11 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-
-
-
+//            int jumps = 0;
+////        for (int i = 0; i < k; i+=j) {
+////            jumps++;
+////        }
+////        return jumps;
         int solution = k - (j-1);
         if(solution < 0){
             return k;
