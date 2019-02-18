@@ -2,7 +2,6 @@ package com.zipcodewilmington.assessment1.part3;
 
 import com.zipcodewilmington.assessment1.part1.IntegerArrayUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**

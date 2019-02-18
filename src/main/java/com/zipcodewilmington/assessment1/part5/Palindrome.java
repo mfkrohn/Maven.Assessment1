@@ -13,8 +13,6 @@ public class Palindrome {
                 }
                 //System.out.println(input.substring(i,j));
             }
-
-
         }
         return palindromeCount;
     }

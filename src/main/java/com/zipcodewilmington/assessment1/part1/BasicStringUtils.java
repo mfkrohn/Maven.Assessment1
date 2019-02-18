@@ -1,6 +1,5 @@
 package com.zipcodewilmington.assessment1.part1;
-import java.lang.String;
-import java.lang.Character;
+
 
 /**
  * Created by leon on 2/16/18.
