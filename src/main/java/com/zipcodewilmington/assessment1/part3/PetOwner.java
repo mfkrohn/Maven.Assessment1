@@ -15,16 +15,25 @@ public class PetOwner {
      */
     public String name;
     public Pet[] pets;
+
+    public PetOwner(String name){
+        this.name = name;
+        this.pets = new Pet[1];
+    }
+
     public PetOwner(String name, Pet... pets) {
         this.name = name;
         if (pets == null) {
 
             this.pets = new Pet[1];
+
         } else {
             this.pets = pets;
+            pets[0].setOwner(this);
         }
-        pets[0].setOwner(this);
+
     }
+
 
     /**
      * @param pet pet to be added to the composite collection of Pets

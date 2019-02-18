@@ -8,6 +8,7 @@ public class Jumper {
     public int jumps(int k, int j) {
 
 
+
         int solution = k - (j-1);
         if(solution < 0){
             return k;
@@ -21,6 +22,7 @@ public class Jumper {
         else{
             return solution;
         }
+
 
     }
 }

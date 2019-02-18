@@ -52,18 +52,22 @@ public class BasicStringUtils {
      * @return string with identical characters, each with opposite casing
      */
     public static String invertCasing(String str) {
-        
-        for (int i = 0; i < str.length()-1; i++) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < str.length(); i++) {
             Character currentChar = str.charAt(i);
             if(Character.isUpperCase(currentChar)){
 
-                str.replace(currentChar,Character.toLowerCase(currentChar));
+               stringBuilder.append(Character.toLowerCase(currentChar));
             }
-            else if(Character.isLowerCase(currentChar)){
-                str.replace(currentChar,Character.toUpperCase(currentChar));
+           else if(Character.isLowerCase(currentChar)){
+              stringBuilder.append(Character.toUpperCase(currentChar));
+            }
+           else {
+               stringBuilder.append(" ");
             }
         }
 
-        return str;
+
+        return stringBuilder.toString();
     }
 }
